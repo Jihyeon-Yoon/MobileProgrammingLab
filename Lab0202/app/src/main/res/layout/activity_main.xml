@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--EditText 2개와 Button 객체를 세로로 나열하기 위해서 LinearLayout에 vertical속성을 줌-->
+<!--EditText와 Button 객체를 세로로 나열하기 위해 LinearLayout에 vertical속성을 줌-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -9,30 +9,20 @@
 
     <!--View 객체들을 java파일에서 인식하기 위해 id속성을 줌-->
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="이름"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/age"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="나이"
+        android:hint="URL"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/addButton"
+        android:id="@+id/nextButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="추가"
+        android:text="NEXT"
         android:layout_gravity="center"/>
 
 </LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--닫기 버튼의 위치를 조정하기 위해 RelativeLayout을 씀-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!--View 객체들을 java파일에서 인식하기 위해 id속성을 줌-->
+    <Button
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="닫기"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
