@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    tools:context="com.example.yjh.lab0302.MainActivity">
+
+    <TableRow>
+        <TextView
+            android:text="@string/name"
+            android:padding="3dp"
+            />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_span="4"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/gender"
+            android:padding="5dp"
+            />
+        <RadioGroup
+            android:id="@+id/radioGroupMW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <RadioButton
+                android:id="@+id/radM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/M"
+                />
+            <RadioButton
+                android:id="@+id/radW"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/W"
+                />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:text="@string/reception"
+            android:padding="5dp"
+            />
+        <CheckBox
+            android:id="@+id/check_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_sms"
+            android:textStyle="bold"
+            />
+        <CheckBox
+            android:id="@+id/check_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/check_email"
+            android:textStyle="bold"
+            />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/button_register"
+            android:text="@string/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="4"
+            />
+    </TableRow>
+
+</TableLayout>

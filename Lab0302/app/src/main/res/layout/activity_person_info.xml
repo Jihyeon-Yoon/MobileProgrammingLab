@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="2"
+    tools:context="com.example.yjh.lab0302.PersonInfoActivity">
+
+    <TableRow>
+        <TextView android:text="@string/name" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=":" />
+        <TextView android:id="@+id/textView_name" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/gender" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=":" />
+        <TextView android:id="@+id/textView_gender" />
+    </TableRow>
+
+    <TableRow>
+        <TextView android:text="@string/reception" />
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text=":" />
+        <TextView android:id="@+id/textView_reception" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_column="3"
+            android:text="@string/back" />
+    </TableRow>
+
+</TableLayout>
