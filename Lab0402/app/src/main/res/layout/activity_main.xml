@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    //first layout: background layout
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff4499ff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base Area"
+            android:textSize="30dp"
+            android:textColor="#ffffffff"/>
+    </LinearLayout>
+
+    //second layout: layout shown by sliding
+    <LinearLayout
+        android:id="@+id/page"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:background="#44aa00"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sliding Area"
+            android:textSize="30dp"
+            android:textColor="#ffffffff"/>
+    </LinearLayout>
+
+    //open and close button
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Page"
+        android:layout_gravity="center_vertical|right"/>
+
+</FrameLayout>
