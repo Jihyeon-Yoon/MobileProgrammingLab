@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facto Thread"
+        android:textSize="15pt"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:text="CALCULATE"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="n"
+        android:gravity="center"
+        android:layout_below="@+id/textView"
+        android:layout_toLeftOf="@+id/button"
+        />
+
+    <TextView
+        android:id="@+id/textViewNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="n n-1 n-2 ..."
+        android:gravity="center"
+        android:layout_below="@+id/editText"
+        android:textSize="8pt"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="= ?"
+        android:textSize="8pt"
+        android:gravity="center"
+        android:layout_below="@+id/textViewNum"
+        />
+
+</RelativeLayout>
